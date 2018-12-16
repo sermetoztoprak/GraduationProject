@@ -1,6 +1,7 @@
 package com.graduationproject.graduationproject;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.graduationproject.graduationproject.Common.Common;
 import com.graduationproject.graduationproject.Model.User;
 
 public class SignIn extends AppCompatActivity {
@@ -50,7 +52,13 @@ public class SignIn extends AppCompatActivity {
                             mDialog.dismiss();
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(edtPassword.getText().toString())){
+
+                                Intent intent = new Intent(SignIn.this,FeedActivity.class);
+                                Common.currentUser = user;
+                                startActivity(intent);
+                                finish();
                                 Toast.makeText(SignIn.this, "Giriş Başarılı !", Toast.LENGTH_SHORT).show();
+
                             }
                             else {
                                 Toast.makeText(SignIn.this, "Şifre Yan !!!", Toast.LENGTH_SHORT).show();
