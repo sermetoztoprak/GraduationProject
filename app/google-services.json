@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "221535551560-b80bf4dfstp94ng3gigok4g5jikh8j78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.graduationproject.graduationproject",
+            "certificate_hash": "4bca4800e3c21986793e910379e9e70cb3846127"
+          }
+        },
+        {
+          "client_id": "221535551560-fet78prmo3eilnd4sgp27bqntdfhf2h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.graduationproject.graduationproject",
+            "certificate_hash": "390ff8bc2146daa6447e211b203dfb0f76059bc7"
+          }
+        },
+        {
           "client_id": "221535551560-1u7bupdn95gc23ie5k06gdi2ggcsv63j.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +45,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221535551560-1u7bupdn95gc23ie5k06gdi2ggcsv63j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
