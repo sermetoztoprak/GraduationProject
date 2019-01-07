@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportDrugActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/loginbackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_margin="50dp"
+            android:background="@drawable/logo"/>
+
+
+
+        <EditText
+            android:id="@+id/edtMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_background"
+            android:hint="Eklemek istediğiniz ilacın adı "
+            android:textAlignment="center"
+            android:textColor="#d1c4e9"
+            tools:text="Eklemek İstediğiniz İlacın Adı" />
+
+        <EditText
+            android:id="@+id/edtClock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:gravity="center"
+            android:hint="Günde Kaç Kere Alıyorsunuz ?"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#d1c4e9"
+            tools:text="Günde Kaç Kere Alıyorsunuz ?" />
+
+        <EditText
+            android:id="@+id/edtTimeArrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:gravity="center"
+            android:hint="Kaç Saat Aralıklarla Alacaksınız ?"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#d1c4e9"
+            tools:text="Kaç Saat Aralıklarla Alacaksınız ?" />
+
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:gravity="center"
+            android:hint="Kendinize Notunuz "
+            android:textAlignment="center"
+            android:textColor="#d1c4e9"
+            tools:text="Kendinize Notunuz " />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnIList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="@color/rippleEffectColor"
+        android:layout_alignParentBottom="true"
+        android:text="Raporlu İlaçlarım"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"/>
+    <Button
+        android:id="@+id/btnAddMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="@color/rippleEffectColor"
+        android:layout_above="@+id/btnIList"
+        android:text="İlacı Ekle"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"/>
+
+
+</RelativeLayout>

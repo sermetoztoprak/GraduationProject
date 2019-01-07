@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/image"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Günde Aldığınız İlaç Adedi"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_background"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Yeni İlaç Adı Gir"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/edtTimeArrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="133dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Aldığınız Aralık Saati"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="189dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Notunuz"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="173dp"
+        android:background="#98ee99"
+        android:text="GÜNCELLE"
+        android:textColor="#1b5e20" />
+
+</RelativeLayout>

@@ -21,7 +21,7 @@ import com.graduationproject.graduationproject.Common.Common;
 public class FeedActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    CardView siparisver;
+    CardView siparisver,raporluIlac;
     TextView txtFullName;
 
     @Override
@@ -33,12 +33,21 @@ public class FeedActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         siparisver=findViewById(R.id.siparisver);
+        raporluIlac=findViewById(R.id.raporluIlac);
 
         siparisver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FeedActivity.this,OrderActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        raporluIlac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent raporlu = new Intent(FeedActivity.this,ReportDrugActivity.class);
+                startActivity(raporlu);
             }
         });
 
