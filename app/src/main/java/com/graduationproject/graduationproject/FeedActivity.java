@@ -21,7 +21,7 @@ import com.graduationproject.graduationproject.Common.Common;
 public class FeedActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    CardView siparisver,raporluIlac;
+    CardView siparisver,raporluIlac,siparisDurumu;
     TextView txtFullName;
 
     @Override
@@ -29,11 +29,12 @@ public class FeedActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Feed");
+        toolbar.setTitle("ECZA SEPETİ");
         setSupportActionBar(toolbar);
 
         siparisver=findViewById(R.id.siparisver);
         raporluIlac=findViewById(R.id.raporluIlac);
+        siparisDurumu =findViewById(R.id.siparisDurumu);
 
         siparisver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,14 @@ public class FeedActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent raporlu = new Intent(FeedActivity.this,ReportDrugActivity.class);
                 startActivity(raporlu);
+            }
+        });
+
+        siparisDurumu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent siparisDurumu = new Intent(FeedActivity.this,OrderStatusActivity.class);
+                startActivity(siparisDurumu);
             }
         });
 
@@ -118,12 +127,21 @@ public class FeedActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_medicine) {
-            // Handle the camera action
+            Intent intent = new Intent(FeedActivity.this,OrderActivity.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_cart) {
+            Intent intent = new Intent(FeedActivity.this,CartActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_orders) {
+            Intent siparisDurumu = new Intent(FeedActivity.this,OrderStatusActivity.class);
+            startActivity(siparisDurumu);
 
         } else if (id == R.id.nav_log_out) {
+            Intent signIn = new Intent(new Intent(FeedActivity.this,SignIn.class));
+            signIn.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(signIn);
 
         }
 

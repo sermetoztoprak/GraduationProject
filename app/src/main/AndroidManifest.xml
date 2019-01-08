@@ -26,7 +26,8 @@
         <activity android:name=".MedicineDetailActivity" />
         <activity android:name=".CartActivity" />
         <activity android:name=".ReportDrugActivity" />
-        <activity android:name=".ReportDrugListActivity"></activity>
+        <activity android:name=".ReportDrugListActivity" />
+        <activity android:name=".OrderStatusActivity"></activity>
     </application>
 
 </manifest>

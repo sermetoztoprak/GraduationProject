@@ -9,7 +9,7 @@
     tools:showIn="@layout/app_bar_feed"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/homepage_background"
+    android:background="@drawable/background2"
     android:gravity="center">
 
     <LinearLayout
@@ -154,6 +154,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
+            android:id="@+id/siparisDurumu"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
